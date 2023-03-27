@@ -1,4 +1,4 @@
-# fpyajs-method
+# fpyajs-method [![Build status](https://ci.appveyor.com/api/projects/status/i73p9epadmf45jah?svg=true)](https://ci.appveyor.com/project/bas27/fpyajs-method)
 Реализация в классе Character метода levelUp, damage
 
 # Домашнее задание к лекции «Классы, наследование»

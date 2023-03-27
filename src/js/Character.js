@@ -1,4 +1,4 @@
-class Character {
+export default class Character {
   static typeCharacter = [
     'Bowman',
     'Swordsman',
@@ -37,16 +37,12 @@ class Character {
   };
 
   damage(points) {
-    if (this.health >= 0) {
+    if (this.health > 0) {
       this.health -= points * (1 - this.defence / 100)
+    } else {
+      throw new Error('Cannot damage');
     }
 
   }
 //
 }
-
-const person = new Character("Bo", "Undead", 20, 20)
-person.levelUp()
-console.log(person)
-person.damage(10)
-console.log(person)
