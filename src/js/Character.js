@@ -8,7 +8,7 @@ export default class Character {
     'Zombie',
   ];
 
-  constructor(name, type, attack, defence, health = 100, level = 1) {
+  constructor(name, type) {
     this.name = name;
     if ((this.name).length < 2 || (this.name).length > 10) {
       throw new Error('Length name error');
@@ -19,10 +19,10 @@ export default class Character {
     if (!Character.typeCharacter.includes(this.type)) {
       throw new Error('This type does not exist');
     }
-    this.health = health;
-    this.level = level;
-    this.attack = attack;
-    this.defence = defence;
+    this.health = 100;
+    this.level = 1;
+    this.attack = undefined;
+    this.defence = undefined;
   }
 
   levelUp() {
