@@ -19,6 +19,7 @@ export default class Character {
     if (!Character.typeCharacter.includes(this.type)) {
       throw new Error('This type does not exist');
     }
+
     this.health = 100;
     this.level = 1;
     this.attack = undefined;
